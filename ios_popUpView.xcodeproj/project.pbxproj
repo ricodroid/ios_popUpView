@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D41531D2B7E4DFF0003C10F /* OverLayerPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41531B2B7E4DFF0003C10F /* OverLayerPopUpViewController.swift */; };
+		1D41531E2B7E4DFF0003C10F /* OverLayerPopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D41531C2B7E4DFF0003C10F /* OverLayerPopUpViewController.xib */; };
 		1DA474172B7E1C7E0030406D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA474162B7E1C7E0030406D /* AppDelegate.swift */; };
 		1DA474192B7E1C7E0030406D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA474182B7E1C7E0030406D /* SceneDelegate.swift */; };
 		1DA4741B2B7E1C7E0030406D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA4741A2B7E1C7E0030406D /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D41531B2B7E4DFF0003C10F /* OverLayerPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverLayerPopUpViewController.swift; sourceTree = "<group>"; };
+		1D41531C2B7E4DFF0003C10F /* OverLayerPopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverLayerPopUpViewController.xib; sourceTree = "<group>"; };
 		1DA474132B7E1C7E0030406D /* ios_popUpView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_popUpView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA474162B7E1C7E0030406D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DA474182B7E1C7E0030406D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D41531A2B7E4DD20003C10F /* OverLayerPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				1D41531B2B7E4DFF0003C10F /* OverLayerPopUpViewController.swift */,
+				1D41531C2B7E4DFF0003C10F /* OverLayerPopUpViewController.xib */,
+			);
+			path = OverLayerPopUp;
+			sourceTree = "<group>";
+		};
 		1DA4740A2B7E1C7E0030406D = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +69,7 @@
 		1DA474152B7E1C7E0030406D /* ios_popUpView */ = {
 			isa = PBXGroup;
 			children = (
+				1D41531A2B7E4DD20003C10F /* OverLayerPopUp */,
 				1DA474162B7E1C7E0030406D /* AppDelegate.swift */,
 				1DA474182B7E1C7E0030406D /* SceneDelegate.swift */,
 				1DA4741A2B7E1C7E0030406D /* ViewController.swift */,
@@ -127,6 +141,7 @@
 			files = (
 				1DA474232B7E1C7F0030406D /* LaunchScreen.storyboard in Resources */,
 				1DA474202B7E1C7F0030406D /* Assets.xcassets in Resources */,
+				1D41531E2B7E4DFF0003C10F /* OverLayerPopUpViewController.xib in Resources */,
 				1DA4741E2B7E1C7E0030406D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DA4741B2B7E1C7E0030406D /* ViewController.swift in Sources */,
+				1D41531D2B7E4DFF0003C10F /* OverLayerPopUpViewController.swift in Sources */,
 				1DA474172B7E1C7E0030406D /* AppDelegate.swift in Sources */,
 				1DA474192B7E1C7E0030406D /* SceneDelegate.swift in Sources */,
 			);
