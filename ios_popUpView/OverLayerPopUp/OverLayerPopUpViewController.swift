@@ -17,6 +17,12 @@ class OverLayerPopUpViewController: UIViewController {
         hide()
     }
     
+    @IBAction func OnNegativeButton(_ sender: Any) {
+        hide()
+    }
+    
+    @IBOutlet weak var mainMessage: UILabel!
+    
     init() {
         super.init(nibName: "OverLayerPopUpViewController", bundle: nil)
         self.modalPresentationStyle = .overFullScreen
@@ -29,7 +35,25 @@ class OverLayerPopUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        textAdjust()
         configView()
+    }
+    
+    // テキストの行間を広げる
+    private func textAdjust() {
+        let mainMessageText = "ちょっと行間にスペースを持たせるテキスト\n来週からスリランカに行く！！"
+        let lineSpacing: CGFloat = 8.0
+        let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.lineSpacing = lineSpacing
+        
+        let attributedString = NSAttributedString(
+                string: mainMessageText,
+                attributes: [
+                    .paragraphStyle: paragraphStyle
+                ]
+            )
+        mainMessage.attributedText = attributedString
+        mainMessage.textAlignment = .center
     }
 
     func configView() {
